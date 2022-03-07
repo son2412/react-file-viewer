@@ -67,7 +67,7 @@ inquirer.prompt([
   // bump version
   try {
     console.log(runColor('bumping version, creating tag commit'));
-    execSync(`npm version ${answer} --access public`, execOpts);
+    execSync(`npm version ${answer}`, execOpts);
   } catch (e) {
     console.log(errColor('Version bump failed. Aborting.'));
     return;
@@ -76,7 +76,7 @@ inquirer.prompt([
   // publish
   try {
     console.log(runColor('publishing to npm'));
-    execSync('npm publish', execOpts);
+    execSync('npm publish --access public', execOpts);
   } catch (e) {
     console.log(errColor('Publishing failed'));
     return;
