@@ -1,6 +1,6 @@
 {
   "name": "chatapp-react-file-viewer",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Extendable file viewer for web",
   "main": "dist/index.js",
   "module": "dist/index.js",
