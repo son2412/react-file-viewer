@@ -67,7 +67,7 @@ inquirer.prompt([
   // bump version
   try {
     console.log(runColor('bumping version, creating tag commit'));
-    execSync(`npm version ${answer}`, execOpts);
+    execSync(`npm version ${answer} --access public`, execOpts);
   } catch (e) {
     console.log(errColor('Version bump failed. Aborting.'));
     return;
