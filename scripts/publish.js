@@ -82,21 +82,21 @@ inquirer.prompt([
     return;
   }
 
-  // try {
-  //   console.log(runColor('running git push origin master'));
-  //   execSync('git push origin master', execOpts);
-  // } catch (e) {
-  //   console.log(errColor('git push origin master failed'));
-  //   return;
-  // }
+  try {
+    console.log(runColor('running git push origin master'));
+    execSync('git push origin master', execOpts);
+  } catch (e) {
+    console.log(errColor('git push origin master failed'));
+    return;
+  }
 
-  // try {
-  //   console.log(runColor('running git push origin --tags'));
-  //   execSync('git push origin --tags', execOpts);
-  // } catch (e) {
-  //   console.log(errColor('git push origin --tags failed'));
-  //   return;
-  // }
+  try {
+    console.log(runColor('running git push origin --tags'));
+    execSync('git push origin --tags', execOpts);
+  } catch (e) {
+    console.log(errColor('git push origin --tags failed'));
+    return;
+  }
 
   console.log(goodColor('new version successfully published to npm'));
 });
