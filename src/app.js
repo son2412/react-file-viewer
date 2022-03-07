@@ -9,6 +9,7 @@ import sampleHouse from '../example_files/SampleHouse.wexbim';
 import solarImage from '../example_files/02-USVI-Solar.jpg';
 import docx from '../example_files/SampleSpec.docx';
 import doc from '../example_files/sample.doc';
+import odt from '../example_files/ots112.odt';
 import csv from '../example_files/Total_Crime.csv';
 import mp4 from '../example_files/small.mp4';
 import xlsx from '../example_files/SimpleSpreadsheet.xlsx';
@@ -19,11 +20,12 @@ import mov from '../example_files/step.mov'
 import mp3 from '../example_files/sample.mp3'
 import rtf from '../example_files/sample.rtf';
 import pdf from '../example_files/sample.pdf';
+import txt from '../example_files/text.txt';
 
 ReactDOM.render(
   <FileViewer
-    fileType="xlsx"
-    filePath={xlsx}
+    fileType="txt"
+    filePath={txt}
     onGridSort={() => null}
   />,
   window.document.getElementById('app')

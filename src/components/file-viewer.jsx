@@ -52,6 +52,7 @@ class FileViewer extends Component {
       case 'pdf': {
         return PDFViewer;
       }
+      case 'txt':
       case 'doc':
       case 'odt':
       case 'docx': {

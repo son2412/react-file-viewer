@@ -1,0 +1,6 @@
+We are going to use that generated token and set it as environment variable inside the Travis dashboard. 
+
+
+
+
+Go to the settings of your project inside Travis and search for the environment variables section.
