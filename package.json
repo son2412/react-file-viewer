@@ -1,11 +1,12 @@
 {
-  "name": "@amela/react-file-reader",
+  "name": "@amela/react-file-viewer",
   "version": "1.0.7",
   "description": "Extendable file viewer for web",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/plangrid/react-file-viewer.git"
   },
   "scripts": {
     "dev": "webpack -d --watch",
@@ -17,10 +18,26 @@
     "publish": "node ./scripts/publish.js"
   },
   "author": "PlanGrid <opensource@plangrid.com>",
+  "contributors": [
+    {
+      "name": "Alexei Schiopu",
+      "email": "alexxschiopu@gmail.com",
+      "url": "http://schiopu.me"
+    },
+    {
+      "name": "Aaron Norby",
+      "email": "aaron.norby@gmail.com"
+    },
+    {
+      "name": "Viktoriya Savkina",
+      "email": "viktoriya.savkina@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/plangrid/react-file-viewer/issues"
   },
+  "homepage": "https://github.com/plangrid/react-file-viewer#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
